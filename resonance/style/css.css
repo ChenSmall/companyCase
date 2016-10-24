@@ -1,0 +1,547 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ul,ol,h1,h2,h3,h4,h5,h6,p,input,select,textarea,dl,dd{margin: 0;padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;}
+img {border: none;vertical-align: top;}
+textarea {resize: none;}/*右下角的小尾巴*/
+input,select,textarea {background: none;border: none;outline:none;}
+.clearfix:after,.clearfix:before {content: "";display:table}
+.clearfix:after {clear: both;}
+.clearfix {*zoom:1;}
+i {font-style: normal;}
+.hide {display: none;}.show {display: block;}
+
+body {font-family: Helvetica;background-color: #F5F3F4;}
+
+
+.head_photo i {
+	display: none;
+}
+.first_name {
+	position: relative;
+}
+.first_name i {
+	display: block;
+	width: 0.45rem;
+	height: 0.53rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -4.01rem -0.01rem;
+	position: absolute;
+	left: -0.1rem;top: 0.5rem;
+}
+.two_name {
+	position: relative;
+}
+.two_name i {
+	display: block;
+	width: 0.45rem;
+	height: 0.53rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -4.52rem -0.01rem;
+	position: absolute;
+	left: -0.1rem;top: 0.5rem;
+}
+.three_name {
+	position: relative;
+}
+.three_name i {
+	display: block;
+	width: 0.45rem;
+	height: 0.53rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -5.01rem -0.01rem;
+	position: absolute;
+	left: -0.1rem;top: 0.5rem;
+}
+
+
+/**nav开始**/
+.nav {
+	width: 100%;
+	height: 0.98rem;
+	position: fixed;
+	bottom: 0;
+}
+.nav ul {
+	width: 100%;
+	height: 0.98rem;
+	display: -webkit-flex;
+}
+.nav ul li {
+	flex: 1;
+	text-align: center;
+	background-color: #fabb85;
+}
+.nav ul .active {
+	background-color: #fbcfa9;
+}
+.nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.24rem;
+	color: #FFF;
+	position: relative;
+}
+.nav ul li a span {
+	display: block;
+	margin-top: 0.05rem;
+}
+.nav ul li a i {
+	display: block;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	margin: 0.06rem auto 0;
+}
+.nav .topStudent a i {
+	width: 0.51rem;
+	height: 0.51rem;
+	background-position: -2.01rem -0.01rem;
+}
+.nav .record a i {
+	width: 0.68rem;
+	height: 0.52rem;
+	background-position: -2.61rem -0.01rem;
+}
+.nav .personNav a i {
+	width: 0.49rem;
+	height: 0.53rem;
+	background-position: -3.41rem -0.01rem;
+}
+/**nav结束**/
+
+/**个人中心personal开始**/
+.headPro {
+	width: 1.7rem;
+	height: 1.7rem;
+	left: 0;right: 0;
+	margin: 7.5% auto 0;
+}
+.headPro img {
+	width: 1.61rem;
+	height: 1.61rem;
+	border-radius: 100%;
+	border: 0.045rem solid #fabb85;
+}
+
+.personalCont {
+	margin-top: 7.5%;
+}
+.personalCont ul {
+	width: 100%;
+	border-top: 2px solid #e7e7e7;
+}
+.personalCont ul li {
+	width: 100%;
+	padding: 0.38rem 0;
+	border-bottom: 2px solid #e7e7e7;
+	font-size: 0.24rem;
+	text-indent: 12%;
+	position: relative;
+}
+.personalCont ul li i {
+	display: block;
+	position: absolute;
+	top: 0;bottom: 0;left: 4%;
+	margin: auto;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+}
+.personalCont ul li:nth-child(1) i {
+	width: 0.38rem;
+	height: 0.28rem;
+	background-position: -0.01rem -0.01rem;
+}
+.personalCont ul li:nth-child(2) i {
+	width: 0.4rem;
+	height: 0.4rem;
+	background-position: -0.52rem -0.01rem;
+}
+.personalCont ul li:nth-child(3) i {
+	width: 0.36rem;
+	height: 0.46rem;
+	background-position: -1.01rem -0.01rem;
+}
+
+.myVoice {
+	width: 2.19rem;
+	height: 0.78rem;
+	left: 0;right: 0;
+	margin: 8.21% auto 0;
+}
+.myVoice a {
+	display: block;
+	width: 2.13rem;
+	height: 0.72rem;
+	line-height: 0.72rem;
+	text-indent: 0.72rem;
+	background-color: #f5996d;
+	border: 3px solid #f5b08f;
+	border-radius: 0.3rem;
+	font-size: 0.3rem;
+	color: #FFF;
+	position: relative;
+}
+.myVoice a i {
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.39rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -1.52rem -0.01rem;
+	position: absolute;
+	top: 0;bottom: 0;left: 10.33%;
+	margin: auto;
+}
+/**个人中心personal结束**/
+
+
+
+/**评论页（未评论）开始**/
+.specificContent {
+	width: 100%;
+	background-color: #FFF;
+}
+.specificContent ul {
+	padding-bottom: 0.59rem;
+	border-bottom: 2px solid #f0f0f0;
+	position: relative;
+}
+.specificContent ul li {
+	float: left;
+}
+.specificContent .user_photo .head_photo {
+	width: 0.82rem;
+	margin: 0.32rem 0.23rem 0 0.45rem;
+	text-align: center;
+}
+.specificContent .user_photo .head_photo img {
+	display: block;
+	width: 0.72rem;
+	height: 0.72rem;
+	border: 0.05rem solid #f0f0f0;
+	border-radius: 100%;
+}
+.specificContent .user_photo .head_photo p {
+	font-size: 0.24rem;
+	color: #414141;
+	margin-top: 0.3rem;
+}
+
+.user_recording {
+	font-size: 0.24rem;
+}
+.user_recording .userUpload_recording img {
+	width: 3.59rem;
+	height: 0.79rem;
+	margin-top: 0.34rem;
+}
+.user_recording .review {
+	height: 0.53rem;
+	line-height: 0.53rem;
+	margin-top: 0.15rem;
+	float: left;
+}
+.user_recording .review i {
+	display: block;
+	width: 0.53rem;
+	height: 0.53rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -5.52rem -0.01rem;
+	position: absolute;
+}
+.user_recording .review p {
+	text-indent: 0.75rem;
+}
+.user_recording .thumbUp {
+	height: 0.53rem;
+	line-height: 0.53rem;
+	margin-top: 0.15rem;
+	margin-left: 0.35rem;
+	float: left;
+}
+.user_recording .thumbUp i {
+	display: block;
+	width: 0.53rem;
+	height: 0.53rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -6.12rem -0.01rem;
+	position: absolute;
+}
+.user_recording .thumbUp p {
+	text-indent: 0.75rem;
+}
+
+.userUpload_time {
+	position: relative;
+	right: -2.4rem;top: 0.47rem;
+}
+.userUpload_time div {
+	width: 1.13rem;
+	height: 0.53rem;
+	line-height: 0.53rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #FFF;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -6.71rem -0.01rem;
+	position: absolute;
+	right: 0.3rem;
+}
+.userUpload_time p {
+	width: 2.7rem;
+	font-size: 0.18rem;
+	position: absolute;
+	right: 0;top: 1rem;
+}
+
+.noComm {
+	margin-top: 20%;
+	text-align: center;
+}
+.noComm i {
+	display: block;
+	width: 1.66rem;
+	height: 1.75rem;
+	margin: 0 auto 0.35rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -0.02rem -6.23rem;
+}
+.noComm p {
+	line-height: 0.5rem;
+	font-size: 0.3rem;
+	color: #ababab;
+}
+
+.comment {
+	width: 100%;
+	height: 2.13rem;
+	border-top: 2px solid #f0f0f0;
+	background-color: #FFF;
+	position: fixed;
+	bottom: 0;
+	display: none;
+}
+.comment input {
+	display: block;
+	height: 0.61rem;
+	border-radius: 0.1rem;
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+.comment input:nth-child(1) {
+	padding-left: 0.2rem;
+	background-color: #eeebeb;
+	border: 3px solid #c9c9c9;
+	left: 6%;
+}
+.comment input:nth-child(2) {
+	padding: 0 0.2rem;
+	color: #FFF;
+	background-color: #86c610;
+	border: 3px solid #9fd738;
+	right: 4%;
+}
+
+.comm_list {
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+}
+.comm_list li {
+	padding: 1rem 0 0 0;
+	position: relative;
+}
+.comm_list li img {
+	width: 0.72rem;
+	border: 0.05rem solid #f0f0f0;
+	border-radius: 100%;
+	position: absolute;
+	top: 0.25rem;left: 6%;
+}
+.comm_list li .user_name {
+	height: 0.24rem;
+	font-size: 0.24rem;
+	color: #6bb7ed;
+	position: absolute;
+	top: 0.55rem;left: 20%;
+}
+.comm_list li .user_time {
+	height: 0.18rem;
+	font-size: 0.18rem;
+	color: #414141;
+	position: absolute;
+	top: 0.55rem;right: 4%;
+}
+.comm_list li span {
+	display: block;
+	width: 77%;
+	margin-left: 20%;
+	font-size: 0.24rem;
+	color: #414141;
+}
+/**评论页（未评论）结束**/
+
+
+/**首页index开始**/
+
+.information {
+	width: 100%;
+	border-bottom: 2px solid #e7e7e7;
+	background-color: #FFF;
+}
+.information h2 {
+	padding: 0.15rem 0;
+	text-indent: 11.34%;
+	font-size: 0.24rem;
+	font-weight: normal;
+	color: #414141;
+	position: relative;
+}
+.information h2 i {
+	display: block;
+	width: 0.48rem;
+	height: 0.31rem;
+	background: url(../images/radio.gif) no-repeat;
+	background-size: 0.48rem 0.31rem;
+	position: absolute;
+	left: 3.5%;
+}
+.information ul {
+	margin-top: 0.15rem;
+	display: -webkit-flex;
+}
+.information ul li {
+	flex: 1;
+	line-height: 0.5rem;
+	margin: 0.08rem 0;
+	text-align: center;
+	font-size: 0.3rem;
+}
+.information ul .active {
+	color: #fabb85;
+	border-bottom: 3px solid #fabb85;
+	margin-bottom: -2px;
+}
+.information ul .issue {
+	height: 0.5rem;
+	border-left: 2px solid #cdcdcd;
+	text-indent: 5%;
+	position: relative;
+}
+.information ul .issue i {
+	display: block;
+	width: 0.33rem;
+	height: 0.31rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 8rem;
+	background-position: -0.57rem -0.68rem;
+	position: absolute;
+	top: 0;bottom: 0;left: 15%;
+	margin: auto;
+}
+
+.index_list ul {
+	padding-bottom: 0.3rem;
+}
+
+/**首页index结束**/
+
+
+/**往期广告列表issue开始**/
+.issue ul li {
+	background-color: #FFF;
+}
+.issue ul li img {
+	display: block;
+	width: 7.5rem;
+	height: 3.35rem;
+	margin: 0 auto;
+}
+.issue ul li h2 {
+	font-size: 0.24rem;
+	font-weight: normal;
+	color: #414141;
+	text-align: center;
+	padding: 0.15rem 0;
+}
+/**往期广告列表issue结束**/
+
+/**往期广告列表详情issueList开始**/
+.issue_list ul li {
+	border-bottom: 2px solid #f0f0f0;
+}
+.issue_listY ul li:last-child {
+	width: 2rem;
+	font-size: 0.22rem;
+	float: none;
+	position: absolute;
+	left: 0;right: 0;top: 82%;
+	margin: auto;
+}
+.issue_listY ul li:last-child span {
+	color: #cc3300;
+}
+
+/**往期广告列表详情issueList结束**/
+
+
+/**语音管理列表voiceManageList开始**/
+.voiceMList li h2 i {
+	display: inline-block;
+	color: #dc786e;
+	margin-right: 0.1rem;
+	vertical-align: middle;
+}
+/**语音管理列表voiceManageList结束**/
+
+
+/**往期语音管理currentVoice开始**/
+.currentVocie_list li p {
+	font-size: 0.24rem;
+	font-weight: normal;
+	color: #414141;
+	text-align: center;
+}
+.currentVocie_list li p span {
+	color: #dc786e;
+}
+/**往期语音管理currentVoice结束**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

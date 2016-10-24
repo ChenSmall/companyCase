@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html style="height:100%">
+<head>
+	<title>评论页（未评论）</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="优等生，good" />
+    <meta name="keywords" content="优等生，good" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<link type="text/css" rel="stylesheet" href="style/css.css" />
+</head>
+<body style="height:100%">
+	
+    <section class="specificContent">
+    	<ul class="clearfix">
+    		<li class="user_photo">
+    			<div class="head_photo first_name">
+    				<i></i>
+    				<img src="images/userPhoto.jpg" alt="用户头像">
+    				<p>Justin</p>
+    			</div>
+    		</li>
+    		<li class="user_recording clearfix">
+    			<div class="userUpload_recording"><img src="images/recording.png" alt="录音"></div>
+    			<div class="review" onclick="ping1()"><i></i><p>0</p></div>
+    			<div class="thumbUp"><i></i><p>10</p></div>
+    		</li>
+    		<li class="userUpload_time">
+    			<div>东北话</div>
+    			<p>2016年12月13日 12:00</p>
+    		</li>
+    	</ul>
+    </section>
+    
+    <div class="noComm">
+    	<i></i>
+    	<p>该语音暂无评论</p>
+    	<p>点击按钮立即评论</p>
+    </div>
+    
+    <div id="comment" class="comment">
+    	<form action="">
+    		<input name="pinglun" type="text" placeholder="说点什么吧" size="25">
+    		<input type="submit" value="发送" onclick="return check(this.form)">
+    	</form>
+    </div>
+    
+    <section class="comm_list hide">
+    	<ul>
+    		<li>
+    			<img src="images/userPhoto.jpg" alt="用户头像">
+    			<p class="user_name">user1</p>
+    			<p class="user_time">12月13日 12:00</p>
+    			<span>河南方言啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</span>
+    		</li>
+    		<li>
+    			<i></i>
+    			<img src="images/userPhoto.jpg" alt="用户头像">
+    			<p class="user_name">user1</p>
+    			<p class="user_time">12月13日 12:00</p>
+    			<span>好</span>
+    		</li>
+    		<li>
+    			<i></i>
+    			<img src="images/userPhoto.jpg" alt="用户头像">
+    			<p class="user_name">user1</p>
+    			<p class="user_time">12月13日 12:00</p>
+    			<span>好</span>
+    		</li>
+    	</ul>
+    </section>
+    
+    
+    
+    
+    
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+		
+		function ping1() {
+			document.getElementById("comment").style.display = "block";
+		}
+		
+		function check(form) {
+			if(form.pinglun.value == ''){
+				alert("请输入您的评论");
+				form.pinglun.focus();
+				return false;
+			}
+			
+		return true;
+		
+		}
+		
+    </script>
+    
+</body>
+</html>
