@@ -1,0 +1,1223 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ul,ol,h1,h2,h3,h4,h5,h6,p,input,select,textarea,dl,dd{margin: 0;padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;}
+img {border: none;vertical-align: top;}
+textarea {resize: none;}/*右下角的小尾巴*/
+input,select,textarea {background: none;border: none;outline:none;}
+.clearfix:after,.clearfix:before {content: "";display:table}
+.clearfix:after {clear: both;}
+.clearfix {*zoom:1;}
+i {font-style: normal;}
+.hide {display: none;}.show {display: block;}
+
+body {font-family: Helvetica;background-color: #F5F3F4;}
+
+
+.nav {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+}
+.nav ul {
+	width: 100%;
+	border-top: 2px solid #e6e6e6;
+	background-color: #FFF;
+	display: -webkit-flex;
+}
+.nav ul li {
+	flex: 1;
+	height: 0.98rem;
+}
+.nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.22rem;
+	color: #808080;
+	text-align: center;
+	position: relative;
+}
+.nav ul li a span {
+	display: block;
+	padding-top: 0.65rem;
+}
+.nav ul li a i {
+	display: block;
+	background: url(../images/split.png) no-repeat;
+	background-size: 2rem 2rem;
+	position: absolute;
+	left: 1.03rem; top: 0.12rem;
+}
+.nav ul .yy a i {
+	width: 0.43rem;
+	height: 0.42rem;
+	background-position: -0.78rem 0;
+}
+.nav ul .dd a i {
+	width: 0.36rem;
+	height: 0.42rem;
+	background-position: -1.22rem 0;
+}
+.nav ul .wd a i {
+	width: 0.41rem;
+	height: 0.43rem;
+	background-position: -1.59rem 0;
+}
+
+.myNav ul .active a {
+	color: #33a5a8;
+}
+.myNav ul .active a i {
+	background-position: -1.59rem -0.44rem;
+}
+.ZZdetailsNav ul .active a {
+	color: #33a5a8;
+}
+.ZZdetailsNav ul .active a i {
+	background-position: -0.78rem -0.44rem;
+}
+.orderNav ul .active a {
+	color: #33a5a8;
+}
+.orderNav ul .active a i {
+	background-position: -1.22rem -0.44rem;
+}
+
+
+
+
+/**预约拍照photograph开始**/
+.featured {
+	width: 100%;
+	background-color: #F5F3F4;
+	box-shadow: 0 2px 0.5px #EEE inset;
+}
+.featured h2 {
+	font-size: 0.26rem;
+	height: 0.72rem;
+	line-height: 0.72rem;
+	margin-left: 0.25rem;
+}
+.featured span {
+	margin-left: 0.2rem;
+}
+
+.business {
+	width: 100%;
+	margin-bottom: 1.43rem;
+	background-color: #FFF;
+}
+.business>ul>li {
+	border-bottom: 2px solid #E5E4E4;
+}
+.business>ul>li:last-child {
+	border: none;
+}
+.business li {
+	height: 2.02rem;
+	padding: 0.23rem 0.25rem;
+	position: relative;
+}
+.business li img {
+	width: 2.12rem;
+	height: 2.02rem;
+	float: left;
+}
+.business li .money {
+	float: left;
+}
+.business li .money h3 {
+	font-size: 0.3rem;
+	font-weight: normal;
+	color: #434343;
+	margin: 0.64rem 0 0 0.7rem;
+}
+.business li .money p {
+	font-size: 0.26rem;
+	color: #33A5A9;
+	margin: 0.6rem 0 0 0.7rem;
+}
+.business li .botton {
+	position: absolute;
+	left: 6.87rem; top: 1.05rem;
+}
+.business li .botton i {
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../images/split.png) no-repeat;
+	background-position: -0.39rem 0rem;
+	background-size: 2rem 2rem;
+	position: absolute;
+	left: -0.06rem; top: 0.05rem;
+}
+.business li .botton input[type="checkbox"] {
+	display: inline-block;
+	opacity: 0;
+}
+.business li .botton input[type="checkbox"]:checked+i{
+	background: url(../images/split.png) no-repeat;
+	background-position: 0rem 0rem;
+	background-size: 2rem 2rem;
+}
+.business li .botton input {
+	display: inline-block;
+	margin-right: 0.3rem;
+	position: absolute;
+	left: 0; top: 0.12rem;
+	z-index: 1;
+}
+
+.submit {
+	width: 100%;
+	padding: 0.12rem 0;
+	background-color: #FFF;
+}
+.submit a {
+	display: block;
+	width: 1.8rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	background-color: #33A5A8;
+	border-radius: 0.1rem;
+	font-size: 0.34rem;
+	color: #FFF;
+	margin-left: 5.45rem;
+}
+
+/**预约拍照photograph结束**/
+
+
+
+
+/**展示预约详情YYdetails开始**/
+.photoType {
+	width: 100%;
+	background-color: #FFF;
+}
+.photoType>ul>li {
+	position: relative;
+	border-bottom: 2px solid #E5E4E4;
+	text-indent: 0.25rem;
+}
+.photoType>ul>li:last-child {
+	border: none;
+}
+.photoType ul li h2 {
+	font-size: 0.26rem;
+	color: #434343;
+	padding-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+.photoType ul li p {
+	font-size: 0.2rem;
+	color: #818181;
+	padding-bottom: 0.25rem;
+}
+.photoType ul li span {
+	font-size: 0.26rem;
+	color: #33A5A9;
+	position: absolute;
+	left: 6.15rem; top: 0.45rem;
+}
+
+.client {
+	width: 100%;
+	padding: 0.25rem;
+	margin-top: 0.24rem;
+	background-color: #FFF;
+}
+.client h2 {
+	font-size: 0.22rem;
+	color: #434343;
+	margin-bottom: 0.25rem;
+}
+.client ul {
+	width: 7.29rem;
+}
+.client ul li {
+	float: left;
+	padding: 0.09rem 0.07rem;
+	border: 2px solid #d1d1d1;
+	margin-right: 0.3rem;
+	margin-bottom: 0.25rem;
+}
+.client ul li:nth-child(3n) {
+	margin-right: 0;
+}
+.client ul li img {
+	width: 1.96rem;
+	height: 2.57rem;
+}
+.loadList a {
+	display:block;
+	width:1.6rem;
+	height:0.55rem;
+	border:2px solid #999;
+	border-radius: 0.15rem;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 0.55rem;
+	color: #666;
+	margin: 0 auto 1rem;
+}
+
+
+
+.bottonYuy a {
+	display: inline-block;
+	width: 1.78rem;
+	height: 0.82rem;
+	text-indent: 0.38rem;
+	line-height: 0.82rem;
+	border-radius: 1rem;
+	font-size: 0.3rem;
+	color: #FFF;
+	background-color: #39B7B9;
+	position: fixed;
+	right: -0.58rem;
+	top: 4.23rem;
+}
+
+
+/**展示预约详情YYdetails结束**/
+
+
+
+/**展示预约ZZdetails开始**/
+.addWrap {
+	position:relative;
+	width:100%;
+	background:#fff;
+	margin:0;
+	padding:0;
+}
+.addWrap .swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position:relative;
+}
+.addWrap .swipe-wrap {
+	overflow:hidden;
+	position:relative;
+}
+.addWrap .swipe-wrap > div {
+	float: left;
+	width: 100%;
+	position:relative;
+}
+#position {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+}
+#position li {
+	width:10px;
+	height:10px;
+	margin:0 2px;
+	display:inline-block;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background-color:#AFAFAF;
+}
+#position li.cur {
+	background-color:#33a6a9;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.detailsTitle {
+	width: 100%;
+	height: 1rem;
+	line-height: 0.8rem;
+	text-align: center;
+	margin-top: 0.1rem;
+	background-color: #FFF;
+}
+.detailsTitle h2 {
+	font-size: 0.26rem;
+	font-weight: normal;
+	font-style: oblique;
+	position: relative;
+}
+.detailsTitle h2 i {
+	display: block;
+	width: 1.89rem;
+	height: 0.42rem;
+	background: url(../images/TitleBg.png) no-repeat center;
+	background-size: 1.89rem 0.42rem;
+	position: absolute;
+	left: 50%; top: 0.28rem;
+	margin-left: -0.95rem;
+}
+
+.businesList ul li {
+	width: 7rem;
+	height: 4rem;
+	margin: 0.25rem auto 0;
+}
+.businesList ul li:last-child {
+	margin-bottom: 1.25rem;
+}
+.businesList ul li a {
+	display: inline-block;
+	width: 6.7rem;
+	height: 3.7rem;
+	background-color: #FFF;
+	border: 0.15rem solid #E5E5E5;
+	color: #33A5A9;
+	position: relative;
+}
+
+.businesList ul li a span {
+	text-align: right;
+	font-size: 0.2rem;
+	position: absolute;
+	right: 4.3rem;  top: 1.45rem;
+}
+.businesList ul li a span i:nth-child(1) {
+	font-size: 0.36rem;
+	display: block;
+}
+.businesList ul li a span i:nth-child(2) {
+	display: block;
+}
+.businesList ul li a span i:nth-child(3) {
+	display: block;
+}
+.businesList ul li a img {
+	padding: 0.15rem 0.1rem;
+	background-color: #FFF;
+	position: absolute;
+	width: 3.71rem;
+	height: 2.74rem;
+	left: 2.5rem; top: 0.5rem;
+}
+.businesList ul li:nth-child(2) a img {
+	width:3.38rem;
+	height:3.01rem;
+	top:0;
+}
+.businesList ul li:nth-child(3) a img {
+	width:3.52rem;
+	height:2.57rem;
+	top:0.4rem;
+}
+.businesList ul li:nth-child(4) a img {
+	width:3.71rem;
+	height:2.5rem;
+	top:0.4rem;
+}
+.businesList ul li:nth-child(5) a img {
+	width:3.52rem;
+	height:2.57rem;
+	top:0.4rem;
+}
+/**展示预约ZZdetails结束**/
+
+
+
+/**关于我们about开始**/
+.about {
+	width: 100%;
+	padding-bottom: 0.2rem;
+	background-color: #FFF;
+}
+.about .aboutTitle {
+	font-size: 0.3rem;
+	margin-bottom: 0.2rem;
+}
+.about .aboutTitle h2 {
+	font-size: 0.3rem;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 0.3rem;
+	display: inline-block;
+	width: 100%;
+}
+.about div+ul li {
+	font-size: 0.3rem;
+	color: #7a7d80;
+	text-align: center;
+	line-height: 0.5rem;
+}
+.about div+ul+ul li {
+	width: 6.86rem;
+	margin: 0.25rem auto 0;
+	border: 7px solid #e6e6e6;
+}
+.about div+ul+ul .typeY img {
+	width: 100%;
+	height: 100%;
+}
+.about div+ul+ul .typeE img {
+	width: 6.86rem;
+	height: 4.41rem;
+}
+
+.about div+ul+ul li:last-child {
+	border:none;
+	margin:0.25rem auto;
+}
+.about div+ul+ul li:last-child img {
+	display:block;
+	width:1.11rem;
+	height:0.42rem;
+	margin:0 auto;
+}
+.about div+ul+ul+p {
+	font-size:0.3rem;
+	color:#7a7d80;
+	text-align:center;
+}
+
+/**关于我们about结束**/
+
+
+/**联系我们contact开始**/
+.contact {
+	width: 100%;
+	padding-top: 0.25rem;
+	background-color: #FFF;
+}
+#container{
+	width:92%;
+	height:7rem;
+	margin:0 auto;
+	border:7px solid #e6e6e6;
+}
+
+.contact ul li {
+	font-size: 0.3rem;
+	color: #414448;
+	padding: 0.33rem 0;
+	border-bottom: 2px solid #e6e5e5;
+	text-indent: 0.25rem;
+}
+.contact ul li:last-child {
+	border: none;
+}
+.contact ul .dizhi span {
+	color: #7a7d80;
+}
+.contact ul .phone span {
+	color: #33a6a9;
+}
+
+
+/**联系我们conta结束**/
+
+
+
+/**我的myMess开始**/
+.myMess {
+	width: 100%;
+	padding-top: 0.45rem;
+	background-color: #FFF;
+}
+.myMess img {
+	width: 1.4rem;
+	height: 1.4rem;
+	display: block;
+	border: 3px solid #33a6a9;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.myMess h2 {
+	text-align: center;
+	font-size: 0.34rem;
+	font-weight: normal;
+	color: #2e3337;
+	margin: 0.29rem 0 0.24rem 0;
+}
+.myMess p {
+	text-align: center;
+	font-size: 0.34rem;
+	color: #2e3337;
+	padding-bottom: 0.4rem;
+}
+
+.myList {
+	width: 100%;
+	margin-top: 0.25rem;
+	background-color: #FFF;
+}
+.myList ul li {
+	font-size: 0.34rem;
+	text-indent: 0.8rem;
+	border-bottom: 2px solid #e6e5e5;
+	
+}
+.myList ul li:last-child {
+	border: none;
+}
+.myList ul li a {
+	display: block;
+	color: #2e3337;
+	padding: 0.32rem 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.myList ul li i {
+	display: inline-block;
+	background: url(../images/split.png) no-repeat;
+	background-size: 2rem;
+	position: absolute;
+	left: 0.25rem; top: 0.35rem;
+}
+.myList ul .List_yy i {
+	width: 0.35rem;
+	height: 0.36rem;
+	background-position: 0 -0.44rem;
+}
+.myList ul .List_lx i {
+	width: 0.37rem;
+	height: 0.36rem;
+	background-position: -0.36rem -0.44rem;
+}
+.myList ul .List_gy i {
+	width: 0.38rem;
+	height: 0.35rem;
+	background-position: 0 -0.8rem;
+}
+.myList ul li span {
+	display: inline-block;
+	width: 0.19rem;
+	height: 0.34rem;
+	background: url(../images/split.png) no-repeat;
+	background-position: -0.39rem -0.81rem;
+	background-size: 2rem 2rem;
+	position: absolute;
+	left: 7.04rem; top: 0.3rem;
+}
+
+
+/**我的myMess结束**/
+
+
+/**订单theOrder开始**/
+.ordTop_nav {
+	width: 100%;
+	position: fixed;
+	z-index: 988;
+	left: 0; top: 0;
+}
+.ordTop_nav ul {
+	width: 100%;
+	background-color: #FFF;
+	border-bottom: 2px solid #d7d7d7;
+	display: -webkit-flex;
+}
+.ordTop_nav ul li {
+	flex: 1;
+	text-align: center;
+}
+.ordTop_nav ul .active a {
+	border-bottom: 4px solid #33a6a9;
+	padding: 0.3rem 0 0.26rem 0;
+	margin-bottom: -0.04rem;
+}
+.ordTop_nav ul li a {
+	display: block;
+	padding: 0.3rem 0;
+	font-size: 0.28rem;
+	color: #5d626c;
+}
+
+.orderList {
+	margin-top: 1.15rem;
+}
+/*
+.orderList .noOrder {
+	width: 3.03rem;
+	margin:0 auto;
+}
+.orderList .noOrder img {
+	width: 3.03rem;
+	height: 2.91rem;
+	vertical-align:middle;
+}
+.orderList .noOrder i {
+	display:inline-block;
+	height:10rem;
+	vertical-align:middle;
+}*/
+.orderList>div:last-child {
+	margin-bottom: 1.25rem;
+}
+.Myorder {
+	width: 100%;
+	padding-bottom: 1rem;
+	background-color: #FFF;
+	position: relative;
+}
+.Myorder>ul>li {
+	border-bottom: 2px solid #e6e5e5;
+	font-size: 0.3rem;
+	padding: 0.23rem 0 0.24rem 0;
+	text-indent: 0.25rem;
+}
+.Myorder>ul>li:last-child {
+	margin-bottom: 0.2rem;
+}
+.Myorder>ul>li p {
+	float: left;
+	font-size: 0.3rem;
+	color: #414448;
+	vertical-align: middle;
+}
+.Myorder>ul>li span {
+	float: left;
+	font-size: 0.28rem;
+	color: #7a7d80;
+}
+.Myorder>ul>li:first-child {
+	position: relative;
+}
+.Myorder>ul>li:first-child i {
+	position: absolute;
+	left: 6.1rem; top: 0.23rem;
+}
+.Myorder>ul>li:nth-child(2) ul li {
+	line-height: 0.55rem;
+}
+.Myorder>ul>li:last-child p {
+	float: none;
+}
+.Myorder>ul>li:last-child span {
+	float: none;
+	display: block;
+	margin-top: 0.25rem;
+}
+
+.Myorder .money li {
+	text-align: right;
+	margin-right: 0.25rem;
+	font-size: 0.3rem;
+	color: #414448;
+}
+.Myorder .money>ul>li:nth-child(2) span {
+	color: #33a6a9;
+	font-size: 0.36rem;
+}
+.Myorder .money li span {
+	font-size: 0.28rem;
+	color: #7a7d80;
+}
+.Myorder .money a {
+	display: block;
+	text-align: center;
+	font-size: 0.24rem;
+	border-radius: 0.1rem;
+	position: absolute;
+}
+.Myorder .money .advice {
+	width: 1.53rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	background-color: #FFF;
+	border: 2px solid #272727;
+	color: #272727;
+	left: 3.93rem; bottom: 0.25rem;
+}
+.money .pay  {
+	width: 1.59rem;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	background-color: #33a6a9;
+	color: #FFF;
+	left: 5.65rem; bottom: 0.25rem;
+}
+
+.orderFK {
+	margin-top: 0.25rem;
+}
+.money .overdue {
+	background-color: #7a7d80;
+}
+
+.remind {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+	left: 0; top: 0;
+    display: none;
+}
+.remind .remind_cont {
+	position: absolute;
+	z-index: 11;
+	left: 1.12rem; top: 1.78rem;
+}
+.remind .remind_cont .remind_bg {
+	width: 5.28rem;
+	height: 0.38rem;
+	background-color: #33a6a9;
+	border-radius: 0.05rem 0.05rem 0 0;
+}
+.remind .remind_cont .remind_text {
+	width: 4.3rem;
+	height: 4.35rem;
+	padding-top: 0.05rem;
+	padding: 0.05rem 0.31rem 0 0.65rem;
+	background-color: #FFF;
+	border-radius: 0 0 0.05rem 0.05rem;
+}
+.remind .remind_cont .remind_text h3 {
+	color: #414448;
+	font-size: 0.3rem;
+	text-align: center;
+	margin: 0.18rem 0 0.2rem 0;
+}
+.remind .remind_cont .remind_text ul li {
+	font-size: 0.24rem;
+	color: #545454;
+	position: relative;
+	line-height: 0.4rem;
+}
+.remind .remind_cont .remind_text ul li i {
+	display: block;
+	width: 0.15rem;
+	height: 0.15rem;
+	background: url(../images/split.png) no-repeat;
+	background-position: -0.61rem -0.81rem;
+	background-size: 2rem;
+	position: absolute;
+	left: -0.4rem; top: 0.05rem;
+}
+.remind .remind_cont .remind_text p {
+	font-size: 0.24rem;
+	color: #545454;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.remind .yy {
+	width: 100%;
+	height: 115%;
+	background: rgba(170,170,170,0.2);
+	position: absolute;
+	z-index: 10;
+	left: 0;
+}
+
+
+
+/**订单theOrder结束**/
+
+
+/**预约协议agreement开始**/
+.agreement {
+    width: 100%;
+	padding-bottom: 4rem;
+    background-color: #FFF;
+	position: relative;
+}
+.agreement .name {
+	display: block;
+	width: 2.9rem;
+	height: 2.65rem;
+	line-height: 2.65rem;
+	text-align: center;
+	background: url(../images/xiey.jpg) no-repeat;
+	background-size: 2.9rem 2.65rem;
+	position: absolute;
+	left: 3rem; top: 3.4rem;
+}
+.agreement h2 {
+    font-size: 0.3rem;
+	font-weight: normal;
+    color: #414448;
+	text-align: center;
+	padding-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+.agreement ul {
+	padding: 0 0.2rem 0 0.8rem;
+}
+.agreement ul li {
+    font-size: 0.3rem;
+	line-height: 0.45rem;
+	position: relative;
+	color: #7a7d80;
+}
+.agreement ul li i {
+	display: block;
+	width: 0.35rem;
+	height: 0.35rem;
+	background: url(../images/split.png) no-repeat;
+	background-size: 2rem;
+	position: absolute;
+	left: -0.5rem; top: 0.05rem;
+}
+.agreement ul li .d1 {
+	background-position: 0 -1.21rem;
+}
+.agreement ul li .d2 {
+	background-position: 0 -1.64rem;
+}
+.agreement ul li .d3 {
+	background-position: 0 -1.64rem;
+}
+
+
+/**预约协议agreement结束**/
+
+
+/**预约支付makePay开始**/
+.pay_time {
+	width: 100%;
+	background-color: #33a6a9;
+}
+.pay_time p {
+	font-size: 0.28rem;
+	color: #FFF;
+	text-align: center;
+	padding: 0.2rem 0;
+}
+
+.payMent {
+	font-size: 0.3rem;
+	width: 100%;
+	background-color: #FFF;
+}
+.payMent>ul>li {
+	border-bottom: 2px solid #e6e5e5;
+	padding: 0.3rem 0;
+	text-indent: 0.25rem;
+}
+.payMent>ul>li:last-child {
+	border: none;
+}
+.payMent>ul>li p {
+	float: left;
+    font-size: 0.3rem;
+    color: #414448;
+}
+.payMent>ul>li span {
+	float: left;
+	font-size: 0.28rem;
+    color: #7a7d80;
+}
+.payMent>ul>li:nth-child(3) p {
+	float: none;
+	margin-bottom: 0.25rem;
+}
+.payMent>ul>li:nth-child(3) li {
+	line-height: 0.55rem;
+}
+.payMent>ul>li:nth-child(3) li span {
+	float: left;
+}
+.payMent>ul>li:nth-child(3) li i {
+	float: right;
+	color: #33a6a9;
+	margin-right: 0.25rem;
+}
+.payMent>ul>li:nth-child(4) span {
+	float: right;
+	margin-right: 0.25rem;
+}
+
+.customer {
+	width: 100%;
+	background-color: #FFF;
+	margin-top: 0.25rem;
+}
+.customer li {
+	border-bottom: 2px solid #e6e5e5;
+	font-size: 0.3rem;
+	color: #414448;
+	padding: 0.3rem 0;
+	text-indent: 0.25rem;
+}
+.customer li:last-child {
+	border: none;
+}
+
+.mathedPay {
+	width: 100%;
+	background-color: #FFF;
+	margin-top: 0.25rem;
+	margin-bottom: 1.5rem;
+}
+.mathedPay li {
+	border-bottom: 2px solid #e6e5e5;
+	font-size: 0.3rem;
+	color: #414448;
+	padding: 0.3rem 0;
+	text-indent: 0.25rem;
+}
+.mathedPay li:last-child {
+	border: none;
+	position: relative;
+	text-indent: 0.95rem;
+}
+.mathedPay li:last-child i {
+	display: block;
+	width: 0.54rem;
+	height: 0.55rem;
+	background: url(../images/wechat.png) no-repeat;
+	background-size: 0.54rem 0.55rem;
+	position: absolute;
+	left: 0.25rem; top: 0.2rem;
+}
+
+.toPayFor {
+	width: 100%;
+	background-color: #FFF;
+	position: fixed;
+	left: 0; bottom: 0;
+}
+.toPayFor p {
+	padding: 0.43rem 0;
+	font-size: 0.3rem;
+	color: #414448;
+	text-indent: 0.25rem;
+}
+.toPayFor p span {
+	color: #33a6a9;
+}
+.toPayFor a {
+	display: block;
+	width: 1.8rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	background-color: #33a6a9;
+	border-radius: 0.1rem;
+	font-size: 0.34rem;
+	color: #FFF;
+	position: absolute;
+	right: 0.25rem; top: 0.12rem;
+}
+
+
+/**预约支付makePay结束**/
+
+
+
+/**预约拍照timeChoose开始**/
+#test2 {
+	display: none;
+	width: 100%;
+	margin-top: 0.2rem;
+}
+.userName {
+	width: 100%;
+	margin-bottom: 0.25rem;
+	background-color: #FFF;
+}
+.userName ul li {
+	font-size: 0.3rem;
+	padding: 0.3rem 0;
+	border-bottom: 2px solid #e6e5e5;
+	text-indent: 0.25rem;
+}
+.userName ul li input {
+	font-size:0.3rem;
+}
+.userName ul li:last-child {
+	border: none;
+}
+.userName ul li p {
+	display: inline-block;
+}
+.dateSelect {
+	width: 100%;
+	padding-bottom: 0.25rem;
+	background-color: #FFF;
+	font-size: 0.26rem;
+}
+.dateSelect>p {
+	font-size: 0.26rem;
+	font-weight: bolder;
+	text-indent: 0.25rem;
+	display: inline-block;
+	margin: 0.24rem 0;
+}
+.dateSelect ul {
+	width: 5.76rem;
+	margin: 0 auto;
+}
+.dateSelect ul li {
+	float: left;
+	width: 0.96rem;
+	height: 1.33rem;
+	margin-right: 0.24rem;
+	position: relative;
+}
+.dateSelect ul li:last-child {
+	margin-right: 0;
+}
+.dateSelect>ul>li label {
+	color: #FFF;
+}
+.dateSelect>ul>li label .timeBg {
+	display: block;
+	width: 0.96rem;
+	height: 1.33rem;
+	background: url(../images/timeBg2.jpg) no-repeat;
+	background-size: 0.96rem 1.33rem;
+}
+.dateSelect>ul>li>input {
+	display: inline-block;
+	position: absolute;
+	opacity: 0;
+}
+.dateSelect>ul>li>input[type="radio"]:checked+label .timeBg {
+	width: 0.96rem;
+	height: 1.33rem;
+	background: url(../images/timeBg1.jpg) no-repeat;
+	background-size: 0.96rem 1.33rem;
+}
+.dateSelect>ul>li label .month {
+	position: absolute;
+	left: 0.2rem; top: 0.1rem;
+}
+.dateSelect>ul>li label .day {
+	position: absolute;
+	font-size: 0.38rem;
+	left: 50%; top: 0.45rem;
+	margin-left: -0.2rem;
+}
+.dateSelect>ul>li label .week {
+	position: absolute;
+	left: 0.2rem;
+	top: 1rem;
+}
+
+.timeMinu {
+	width: 100%;
+	padding-top: 0.08rem;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.3rem;
+	margin-top: 0.24rem;
+	background-color: #FFF;
+}
+.timeMinu>ul {
+	width: 5.7rem;
+	margin: 0 auto;
+}
+.timeMinu>ul>li {
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.55rem;
+	margin-bottom: 0.15rem;
+	font-size: 0.3rem;
+	float: left;
+	position: relative;
+}
+.timeMinu>ul>li:nth-child(4n) {
+	margin-right: 0;
+}
+.timeMinu>ul>li>input {
+	display: none;
+	position: absolute;
+}
+.timeMinu>ul>li>label>i {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	background-color: #FFF;
+	border-radius: 50%;
+}
+.timeMinu>ul>li>input[type="radio"]:checked+label i {
+	width: 1rem;
+	height: 1rem;
+	background-color: #33a6a9;
+	border-radius: 50%;
+}
+.timeMinu>ul>li>input[type="radio"]:checked+label span {
+	color: #FFF;
+}
+.timeMinu>ul>li>label>span {
+	position: absolute;
+	left: 0.13rem; top: 0.35rem;
+}
+.timeMinu ul .guoqi span {
+	color: #a0a0a0;
+}
+.timeMinu ul .guoqi input {
+	display: none;
+}
+.timeMinu ul .guoqi i {
+	display: none;
+}
+.timeMinu>ul>.guoqi>input[type="radio"]:checked+label span {
+	color: #a0a0a0;
+}
+
+.refer {
+	width: 100%;
+	height: 1.14rem;
+	margin-top: 0.5rem;
+	background-color: #FFF;
+	position: relative;
+}
+.refer input {
+	display: block;
+	width: 1.8rem;
+	height: 0.9rem;
+	background-color: #33a6a9;
+	border-radius: 0.1rem;
+	color: #FFF;
+	position: absolute;
+	bottom: 0.12rem;
+	right: 0.25rem;
+	-webkit-appearance:none;
+	outline:none;
+	font-size:0.3rem;
+}
+.refer a {
+	display: block;
+	width: 1.8rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	background-color: #33a6a9;
+	border-radius: 0.1rem;
+	color: #FFF;
+	position: absolute;
+	bottom: 0.12rem;
+	left: 0.25rem;
+	font-size: 0.28rem;
+}
+
+
+/**预约拍照timeChoose结束**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

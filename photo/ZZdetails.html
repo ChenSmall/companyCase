@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>展示预约</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="照相好，good" />
+    <meta name="keywords" content="照相好，good" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<link type="text/css" rel="stylesheet" href="style/css.css" />
+</head>
+<body>
+	
+    <section id="banner">
+        <div class="addWrap">
+          <div class="swipe" id="mySwipe">
+            <div class="swipe-wrap">
+              <div><a href="javascript:;"><img class="img-responsive" src="images/banner.jpg"/></a></div>
+              <div><a href="javascript:;"><img class="img-responsive" src="images/banner.jpg"/></a></div>
+              <div><a href="javascript:;"><img class="img-responsive" src="images/banner.jpg"/></a></div>
+            </div>
+          </div>
+          <ul id="position">
+            <li class="cur"></li>
+            <li class=""></li>
+            <li class=""></li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="detailsTitle">
+    	<h2>主打业务<i></i></h2>
+    </section>
+    
+    <section class="businesList">
+    	<ul>
+    		<li>
+    			<a href="YYdetails.html">
+    				<span>
+    					<i>证件照</i>
+    					<i>Identification</i>
+    					<i>Photo</i>
+    				</span>
+    				<img src="images/Profile.png" alt="anli">
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<span>
+    					<i>社交头像照</i>
+    					<i>Social avatar</i>
+    					<i>Photo</i>
+    				</span>
+    				<img src="images/Profile1.png" alt="anli">
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<span>
+    					<i>文艺/形象照</i>
+    					<i>Art</i>
+    					<i>Photo</i>
+    				</span>
+    				<img src="images/Profile2.png" alt="anli">
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<span>
+    					<i>结婚登记照</i>
+    					<i>Marriage&nbsp;registration</i>
+    					<i>Photo</i>
+    				</span>
+    				<img src="images/Profile3.png" alt="anli">
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<span>
+    					<i>签证照</i>
+    					<i>Visa</i>
+    					<i>Photo</i>
+    				</span>
+    				<img src="images/Profile4.png" alt="anli">
+    			</a>
+    		</li>
+    	</ul>
+    </section>
+    
+    
+    
+    
+    <section class="nav ZZdetailsNav">
+    	<ul>
+    		<li class="yy active"><a href="#"><i></i><span>预约</span></a></li>
+    		<li class="dd"><a href="theOrder.html"><i></i><span>订单</span></a></li>
+    		<li class="wd"><a href="myMess.html"><i></i><span>我的</span></a></li>
+    	</ul>
+    </section>
+    
+    <script src="js/swipe.js"></script> 
+	<script type="text/javascript">
+		var bullets = document.getElementById('position').getElementsByTagName('li');
+		var banner = Swipe(document.getElementById('mySwipe'), {
+			auto: 2000,
+			continuous: true,
+			disableScroll:false,
+			callback: function(pos) {
+				var i = bullets.length;
+				while (i--) {
+				  bullets[i].className = ' ';
+				}
+				bullets[pos].className = 'cur';
+			}
+		});
+    </script>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>订单</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="照相好，good" />
+    <meta name="keywords" content="照相好，good" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<link type="text/css" rel="stylesheet" href="style/css.css" />
+</head>
+<body>
+	
+    <section class="ordTop_nav">
+    	<ul>
+    		<li class="active"><a href="#">全部预约</a></li>
+    		<li><a href="#">进行中</a></li>
+    		<li><a href="#">已结束</a></li>
+    	</ul>
+    </section>
+    
+    <section class="orderList">
+    	<div class="Myorder orderWFK">
+    		<ul>
+    			<li class="clearfix"><p>订单号：</p><span>201609089988890950</span><i>未付款</i></li>
+    			<li>
+    				<ul>
+    					<li class="clearfix"><p>拍摄地址：</p><span>七一东路未来像素大厦50号1991照相馆</span></li>
+    					<li class="clearfix"><p>预约时间：</p><span>2016-09-08  15:30</span></li>
+    					<li class="clearfix"><p>门店电话：</p><span>0312-5886132</span></li>
+    				</ul>
+    			</li>
+    			<li><p>拍摄内容：</p><span>证件照（蓝底）</span></li>
+    		</ul>
+    		<div class="money">
+    			<ul>
+    				<li>总价：<span>￥216.00</span></li>
+    				<li>定金：<span>￥10.00</span></li>
+    			</ul>
+    			<a class="advice" href="#" onclick="tis()">拍摄建议</a>
+    			<a class="pay" href="#">去付款</a>
+    		</div>
+    	</div>
+    	
+    	<div class="Myorder orderFK">
+    		<ul>
+    			<li class="clearfix"><p>订单号：</p><span>201609089988890950</span><i>已付款</i></li>
+    			<li>
+    				<ul>
+    					<li class="clearfix"><p>拍摄地址：</p><span>七一东路未来像素大厦50号1991照相馆</span></li>
+    					<li class="clearfix"><p>预约时间：</p><span>2016-09-08  15:30</span></li>
+    					<li class="clearfix"><p>门店电话：</p><span>0312-5886132</span></li>
+    				</ul>
+    			</li>
+    			<li><p>拍摄内容：</p><span>证件照（蓝底）</span></li>
+    		</ul>
+    		<div class="money">
+    			<ul>
+    				<li>总价：<span>￥216.00</span></li>
+    				<li>定金：<span>￥10.00</span></li>
+    			</ul>
+    			<a class="advice" href="#" onclick="tis()">拍摄建议</a>
+    			<a class="pay overdue" href="#">已付款</a>
+    		</div>
+    	</div>
+        
+        <!--<div class="noOrder"><img src="images/noOrder.png" alt="暂无订单信息"><i></i></div>-->
+        
+    </section>
+    
+    <section class="nav orderNav">
+    	<ul>
+    		<li class="yy"><a href="ZZdetails.html"><i></i><span>预约</span></a></li>
+    		<li class="dd active"><a href="#"><i></i><span>订单</span></a></li>
+    		<li class="wd"><a href="myMess.html"><i></i><span>我的</span></a></li>
+    	</ul>
+    </section>
+    
+    <section id="remind" class="remind">
+    	<div class="remind_cont">
+    		<div class="remind_bg"></div>
+    		<div class="remind_text">
+    			<h3>拍摄建议</h3>
+    			<ul>
+    				<li><i></i>请当日准时到达，以便拍摄工作在预定时间内完成</li>
+    				<li><i></i>拍摄前一天请勿酗酒，熬夜，保证充分睡眠，睡前勿饮水太多，避免眼睛浮肿</li>
+    				<li><i></i>拍摄前请将头发清净并吹干，不要用发胶发蜡等定型产品，不要化妆</li>
+    			</ul>
+    			<p>1991照相馆祝您生活愉快 </p>
+    		</div>
+    	</div>
+    	<div class="yy" onclick="tis1()"></div>
+    </section>
+    
+    
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        
+        function tis() {
+            document.getElementById("remind").style.display = "block";
+        }
+        function tis1() {
+            document.getElementById("remind").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>

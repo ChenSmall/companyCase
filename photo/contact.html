@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>联系我们</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="照相好，good" />
+    <meta name="keywords" content="照相好，good" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<link type="text/css" rel="stylesheet" href="style/css.css" />
+</head>
+<body onload="init()">
+	
+    <section class="contact">
+    	<div id="container"></div>
+    	<div>
+    		<ul>
+    			<li class="dizhi">地址：<span>保定市七一东路未来像素大厦 底商50号</span></li>
+    			<li class="phone">联系电话：<span>0312-5886132</span></li>
+    		</ul>
+    	</div>
+    </section>
+    
+    
+    
+    
+    
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+		
+		var init = function() {
+			var center = new qq.maps.LatLng(38.875200,115.571750);
+			var map = new qq.maps.Map(document.getElementById('container'),{
+				center: center,
+				zoom: 17
+			});
+			var infoWin = new qq.maps.InfoWindow({
+				map: map
+			});
+			infoWin.open();
+			//tips  自定义内容
+			infoWin.setContent('<div style="font-size:0.2rem">'+
+				'1991照相馆</div>');
+			infoWin.setPosition(center);
+		}
+    </script>
+    
+</body>
+</html>
