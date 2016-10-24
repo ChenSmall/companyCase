@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>创业培训详情</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta id="viewport" name="viewport" content="width=640,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+	<header id="header" class="cultivate_header">
+        <div class="header1 gWidth">
+            <div class="logo">
+
+                <a href="#"><img src="" alt="logo" class="img-responsive"></a>
+            </div>
+            <nav class="nav_box" id="container">
+                <ul class="nav ckearfix" id="nav">
+                    <li><a href="index.html">网站首页</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                    <li><a href="hatch.html">孵化服务</a></li>
+                    <li><a href="angle.html">天使投资</a></li>
+                    <li class="cur"><a href="cultivate.html">创业培训</a></li>
+                    <li><a href="platform.html">共享平台</a></li>
+                </ul>
+                <div id="buoy"></div>
+            </nav>
+        </div>
+    </header>
+
+	<section id="angle_list" class="cont_list cultivate_list">
+		<div class="gWidth">
+			<div class="angle_list_cont">
+				<h2>比特恒旺创办人王龙海</h2>
+				<div class="list_cont">
+					<h3><i></i>2016·01·18</h3>
+					<ul>
+						<li>王龙海先生毕业于北京工业大学，创办的北京比特恒旺科技有 限公司主要为工业自动化、轨道交通、环境监测</li>
+						<li>仪器仪表等领域的企业提供各种相关的配套软件的开发及硬件集成服务</li>
+						<li>公司自主研发的，基于物联网技术的智能家居及业主监控系统在业内具有领先水平，具有广阔的市场前景</li>
+					</ul>
+				</div>
+			</div>
+			<div class="up_down">
+				<a href="#" class="prev active"><i></i>PREV</a>
+				<a href="#" class="next"><i></i>NEXT</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+        <div class="gWidth">
+            <img src="images/copy.png" alt="">
+            <div class="copy">
+                <p>德山生物医药孵化器欢迎您！</p>
+                <p>地址：北京市门头沟区美安路7号</p>
+            </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript" src="js/jQuery.banner.js"></script>
+<script src="js/nav/jquery.nicenav4.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $.nicenav(500);
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+    window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+        //找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+        //如果屏幕宽度大于640
+        //就用 640/16=40
+        //小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        //最大网页尺寸640
+        //最大字体（根字体大小） 40
+    }
+
+</script>
+
+</body>
+</html>
